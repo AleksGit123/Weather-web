@@ -19,10 +19,6 @@
 
 /* celsius to fah */
 
-.celsius,
-.fahrenheit {
-    font-size: 15px;
-}
 
 .switcher {
     width: 45px;
