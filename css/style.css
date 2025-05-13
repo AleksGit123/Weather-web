@@ -21,6 +21,7 @@ body {
 .main_tag {
     width: min(100%, 2000px);
     padding-bottom: 10px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
