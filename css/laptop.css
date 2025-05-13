@@ -1,0 +1,144 @@
+@media(max-width:1200px) {
+
+    .site_logo {
+        width: 85px;
+        height: 50px;
+    }
+
+
+    /* header */
+    .index_header {
+        column-gap: 80px;
+    }
+
+    .weather_me {
+        font-size: 55px;
+        margin-left: 55px;
+    }
+
+    .current_time {
+        font-size: 16px;
+    }
+
+    .page_ul {
+        column-gap: 45px;
+    }
+
+    .pages {
+        font-size: 22px;
+    }
+
+    .pages::after {
+        width: calc(100% + 5px);
+        left: -2px;
+    }
+
+    /* celsius to fahrenheit */
+
+    .celsius,
+    .fahrenheit {
+        font-size: 22px;
+    }
+
+    .switcher {
+        width: 80px;
+        height: 25px;
+    }
+
+    .switcher_circle {
+        width: 20px;
+        height: 20px;
+    }
+
+
+    /* country search container */
+    ::placeholder {
+        font-size: 22px;
+    }
+
+    .country_search {
+        font-size: 22px;
+        padding-left: 70px;
+    }
+
+    .search_icon {
+        left: 25px;
+        width: 35px;
+        height: 35px;
+    }
+
+    /* weather section */
+    .weather_display_section {
+        padding-inline: 15px;
+    }
+
+    .country_name_div {
+        width: 120px;
+    }
+
+    .country_name {
+        font-size: 22px;
+    }
+
+    .loc_dot {
+        font-size: 20px;
+    }
+
+    .main_temperature {
+        column-gap: 13px;
+    }
+
+    .exact_day {
+        font-size: 16px;
+    }
+
+    .temperature_icon {
+        width: 14px;
+        height: 50px;
+    }
+
+    .temperature {
+        font-size: 57px;
+    }
+
+    /* details section */
+    .details_section {
+        padding-inline: 10px;
+
+    }
+
+    .details_ul {
+        column-gap: 20px;
+    }
+
+    .list_h2,
+    .list_p {
+        font-size: 16px;
+    }
+
+    /* footer */
+
+    .weather_according_time {
+        /* flex: 0 1 826px; */
+        overflow-x: scroll;
+        column-gap: 15px;
+        padding-left: 10px;
+    }
+
+    .time_weather_div {
+        flex: 1 0 100px;
+        height: 120px;
+    }
+
+    .time {
+        font-size: 14px;
+    }
+
+    .weather_icons {
+        font-size: 40px;
+    }
+
+    .degree {
+        font-size: 16px;
+    }
+}

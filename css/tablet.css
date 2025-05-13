@@ -1,0 +1,123 @@
+@media(max-width:915px) {
+    .site_logo {
+        width: 60px;
+        height: 40px;
+    }
+
+    /*header  */
+    .index_header {
+        column-gap: 40px;
+    }
+
+    .weather_me {
+        font-size: 40px;
+        margin-left: 40px;
+    }
+
+    r .current_time {
+        font-size: 13px;
+    }
+
+    .page_ul {
+        column-gap: 20px;
+    }
+
+    .pages {
+        font-size: 17px;
+    }
+
+    .burger_menu {
+        display: block;
+    }
+
+    .header_nav {
+        display: none;
+    }
+
+    /* celsius to fahrenheit */
+
+    .celsius,
+    .fahrenheit {
+        font-size: 18px;
+    }
+
+    .switcher {
+        width: 60px;
+        height: 20px;
+    }
+
+    .switcher_circle {
+        width: 18px;
+        height: 18px;
+    }
+
+    /* search container */
+
+    ::placeholder {
+        font-size: 17px;
+    }
+
+    .country_search {
+        font-size: 18px;
+        padding-left: 53px;
+    }
+
+    .search_icon {
+        left: 18px;
+        width: 25px;
+        height: 25px;
+    }
+
+    /* weather section */
+
+    .weather_display_section {
+        padding: 50px 10px;
+    }
+
+    .country_name_div {
+        width: 92px;
+    }
+
+    .country_name {
+        font-size: 18px;
+    }
+
+    .loc_dot {
+        font-size: 18px;
+    }
+
+    .exact_day {
+        font-size: 16px;
+        transform: translateY(0);
+    }
+
+    .temperature_div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 40px;
+        /* column-gap: 20px; */
+    }
+
+
+
+    .temperature {
+        font-size: 50px;
+    }
+
+    /* details section */
+
+    .details_section {
+        display: none;
+        padding-inline: 5px;
+    }
+
+    .details_ul {
+        column-gap: 14px;
+    }
+
+    .list_h2,
+    .list_p {
+        font-size: 13px;
+    }
+}

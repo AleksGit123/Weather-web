@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <link rel="stylesheet" href="css/reset.css">
+
+    <!-- icon link -->
+    <script src="https://kit.fontawesome.com/b7530147b7.js" crossorigin="anonymous"></script>
+
+    <!-- font link -->
+    <link href="https://api.fontshare.com/v2/css?f[]=poppins@300,500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/laptop.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/mobile.css">
+
+    <!-- title icon link -->
+    <link rel="shortcut icon" href="images/weather-icon.svg" type="image/x-icon">
+    <title>WeatherMe</title>
+</head>
+
+<body>
+
+
+    <main class="main_tag">
+        <video autoplay loop muted playsinline preload="auto" class="clouds">
+            <source src="images/clouds.mp4" type="video/mp4">
+        </video>
+
+        <!-- <a href="index.html">
+            <img src="images/weather-icon.svg" alt="cloud and sun behind" class="site_logo">
+        </a> -->
+
+        <!-- header -->
+        <header class="index_header">
+
+
+
+            <section class="header_main_section">
+                <a href="index.html" class="site_link">
+                    <h1 class="weather_me font">WeatherMe</h1>
+                </a>
+                <p class="current_time font">21:00PM</p>
+
+            </section>
+            <nav class="header_nav">
+                <ul class="page_ul">
+                    <li class="pages font">Today</li>
+                    <li class="pages font">Tommorow</li>
+                    <li class="pages font">Monthly Forecast</li>
+                </ul>
+            </nav>
+            <i class="fa-solid fa-bars-staggered burger_menu"></i>
+            <section class="dropdown_list hide">
+                <ul class="dropdown_ul">
+                    <li class="dropdown_li font">Today</li>
+                    <li class="dropdown_li font">Tommorow</li>
+                    <li class="dropdown_li font">Monthly</li>
+                </ul>
+            </section>
+        </header>
+
+
+        <!-- switch celsius to fahrenheit or vice versa -->
+        <section class=" celsius_fahrenheit">
+            <p class="celsius font">°C</p>
+            <div class="switcher">
+                <div class="switcher_circle"></div>
+            </div>
+            <p class="fahrenheit font">°F</p>
+        </section>
+
+
+        <!-- section for weather info -->
+
+        <div class="search_container">
+            <input type="text" name="country" placeholder="Search for country..." id="country"
+                class="country_search font">
+            <img src="images/search_icon.svg" alt="search icon" class="search_icon">
+
+        </div>
+
+
+        <section class="weather_section">
+
+            <!-- monthly forecast -->
+            <section class="weather_display_section monthly">
+                <div class="country_name_div">
+                    <h2 class="country_name font">Georgia</h2>
+                    <i class="fa-solid fa-location-dot loc_dot"></i>
+
+                </div>
+
+
+                <!-- main temperature display section -->
+                <div class="temperature_div">
+
+                    <h4 class="exact_day font">
+                        May 05, Sun
+                    </h4>
+                    <div class="main_temperature">
+                        <h3 class="temperature font">27°C</h3>
+                    </div>
+
+                </div>
+
+
+                <!-- weather details -->
+                <section class="details_section">
+                    <ul class="details_ul">
+                        <li class="details_li">
+                            <h2 class="list_h2 font">HUMIDITY</h2>
+                            <p class="list_p font">99%</p>
+                        </li>
+                        <li class="details_li">
+                            <h2 class="list_h2 font">VISIBILITY</h2>
+                            <p class="list_p font">8km</p>
+                        </li>
+                        <li class="details_li">
+                            <h2 class="list_h2 font"> AIR PRESSURE</h2>
+                            <p class="list_p font">1005hPa</p>
+                        </li>
+                        <li class="details_li">
+                            <h2 class="list_h2 font">WIND</h2>
+                            <p class="list_p font">2mph</p>
+                        </li>
+                    </ul>
+
+                </section>
+
+            </section>
+
+            <!-- left arrow-->
+            <i class="fa-solid fa-chevron-left left_arrow chevron"></i>
+
+
+            <!-- today forecast -->
+            <section class="weather_display_section today">
+                <div class="country_name_div">
+                    <h2 class="country_name font">Georgia</h2>
+                    <i class="fa-solid fa-location-dot loc_dot"></i>
+
+                </div>
+
+
+                <!-- main temperature display section -->
+                <div class="temperature_div">
+
+                    <h4 class="exact_day font">
+                        May 05, Sun
+                    </h4>
+                    <div class="main_temperature">
+
+                        <h3 class="temperature font">27°C</h3>
+                    </div>
+
+                </div>
+
+
+                <!-- weather details -->
+                <section class="details_section">
+                    <ul class="details_ul">
+                        <li class="details_li">
+                            <h2 class="list_h2 font">HUMIDITY</h2>
+                            <p class="list_p font">99%</p>
+                        </li>
+                        <li class="details_li">
+                            <h2 class="list_h2 font">VISIBILITY</h2>
+                            <p class="list_p font">8km</p>
+                        </li>
+                        <li class="details_li">
+                            <h2 class="list_h2 font"> AIR PRESSURE</h2>
+                            <p class="list_p font">1005hPa</p>
+                        </li>
+                        <li class="details_li">
+                            <h2 class="list_h2 font">WIND</h2>
+                            <p class="list_p font">2mph</p>
+                        </li>
+                    </ul>
+
+                </section>
+
+            </section>
+
+
+            <!-- right arrow -->
+            <i class="fa-solid fa-chevron-right right_arrow chevron"></i>
+
+            <!-- tomorow forecast -->
+            <section class="weather_display_section tommorow">
+                <div class="country_name_div">
+                    <h2 class="country_name font">Georgia</h2>
+                    <i class="fa-solid fa-location-dot loc_dot"></i>
+
+                </div>
+
+
+                <!-- main temperature display section -->
+                <div class="temperature_div">
+
+                    <h4 class="exact_day font">
+                        May 06, Mon
+                    </h4>
+                    <div class="main_temperature">
+                        <img src="images/icon_temp.svg" alt="thermometer icon" class="temperature_icon">
+                        <h3 class="temperature font">27°C☁️</h3>
+                    </div>
+
+                </div>
+
+
+                <!-- weather details -->
+                <section class="details_section">
+                    <ul class="details_ul">
+                        <li class="details_li">
+                            <h2 class="list_h2 font">HUMIDITY</h2>
+                            <p class="list_p font">99%</p>
+                        </li>
+                        <li class="details_li">
+                            <h2 class="list_h2 font">VISIBILITY</h2>
+                            <p class="list_p font">8km</p>
+                        </li>
+                        <li class="details_li">
+                            <h2 class="list_h2 font"> AIR PRESSURE</h2>
+                            <p class="list_p font">1005hPa</p>
+                        </li>
+                        <li class="details_li">
+                            <h2 class="list_h2 font">WIND</h2>
+                            <p class="list_p font">2mph</p>
+                        </li>
+                    </ul>
+
+                </section>
+
+            </section>
+
+        </section>
+
+
+
+        <!-- footer -->
+        <footer class="weather_according_time">
+            <div class="time_weather_div">
+                <h2 class="time font">19:00pm</h2>
+                <p class="weather_icons">🌧️</p>
+                <p class="degree font">29°</p>
+            </div>
+
+            <div class="time_weather_div">
+                <h2 class="time font">21:00pm</h2>
+                <p class="weather_icons">☁️</p>
+                <p class="degree font">27°</p>
+            </div>
+
+            <div class="time_weather_div">
+                <h2 class="time font">23:00pm</h2>
+                <p class="weather_icons">🌩️</p>
+                <p class="degree font">27°</p>
+
+            </div>
+
+            <div class="time_weather_div">
+                <h2 class="time font">1:00am</h2>
+                <p class="weather_icons">🌩️</p>
+                <p class="degree font">26°</p>
+
+            </div>
+            <div class="time_weather_div">
+                <h2 class="time font">3:00am</h2>
+                <p class="weather_icons">🌩️</p>
+                <p class="degree font">29°</p>
+
+            </div>
+            <div class="time_weather_div">
+                <h2 class="time font">5:00am</h2>
+                <p class="weather_icons">⛅</p>
+                <p class="degree font">29°</p>
+
+            </div>
+            <div class="time_weather_div">
+                <h2 class="time font">7:00am</h2>
+                <p class="weather_icons">🌨️</p>
+                <p class="degree font">29°</p>
+
+
+            </div>
+
+            <!-- <h3 class="read_more font">See more</h3> -->
+        </footer>
+    </main>
+
+</body>
+
+</html>
