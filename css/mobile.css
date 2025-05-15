@@ -15,41 +15,40 @@
         font-size: 15px;
     }
 
+
+    .switcher {
+        width: 45px;
+        height: 20px;
+    }
+
+    .switcher_circle {
+        width: 15px;
+        height: 15px;
+    }
+
+    /* search div */
+    ::placeholder {
+        font-size: 14px;
+    }
+
+    .country_search {
+        font-size: 15px;
+        padding-left: 40px;
+    }
+
+    .search_icon {
+        left: 13px;
+        width: 18px;
+        height: 18px;
+    }
+
+    .weather_display_section {
+        padding-block: 40px;
+    }
+
+    .temperature {
+        font-size: 40px;
+    }
 }
 
 /* celsius to fah */
-
-
-.switcher {
-    width: 45px;
-    height: 20px;
-}
-
-.switcher_circle {
-    width: 15px;
-    height: 15px;
-}
-
-/* search div */
-::placeholder {
-    font-size: 14px;
-}
-
-.country_search {
-    font-size: 15px;
-    padding-left: 40px;
-}
-
-.search_icon {
-    left: 13px;
-    width: 18px;
-    height: 18px;
-}
-
-.weather_display_section {
-    padding-block: 40px;
-}
-
-.temperature {
-    font-size: 40px;
-}

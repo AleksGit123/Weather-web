@@ -324,7 +324,7 @@ body {
     align-items: center;
     justify-content: space-between;
     /* transform: translate(28px, 35px); */
-    width: 153px;
+    width: fit-content;
 }
 
 .country_name {
@@ -337,6 +337,7 @@ body {
 .loc_dot {
     color: #2c3e50;
     font-size: 24px;
+    margin-left: 20px;
 }
 
 .temperature_div {
