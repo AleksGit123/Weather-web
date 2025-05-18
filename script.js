@@ -19,17 +19,17 @@ exactDay.forEach(element => {
 //	/forecast.json
 
 //forecast according hour
-fetch(`http://api.weatherapi.com/v1/forecast.json?key=846c554cf37147f48d0190504251605&q=Tbilisi`)
-.then(response =>{
-    return response.json()
-}).then(data =>{
-    console.log(data);
-    // console.log(data.forecast.forecastday[0].hour[0]["temp_c"])
+// fetch(`http://api.weatherapi.com/v1/forecast.json?key=1f7e96cea97a4a288e3114533251805&q=Tbilisi`)
+// .then(response =>{
+//     return response.json()
+// }).then(data =>{
+//     console.log(data);
+//     // console.log(data.forecast.forecastday[0].hour[0]["temp_c"])
     
-    for(let i = 0;i < data.forecast.forecastday[0].hour.length;i++){
-        console.log(`${i}: ${data.forecast.forecastday[0].hour[i]["temp_c"]}`);
-    }
-})
+//     for(let i = 0;i < data.forecast.forecastday[0].hour.length;i++){
+//         console.log(`${i}: ${data.forecast.forecastday[0].hour[i]["temp_c"]}`);
+//     }
+// })
 
 
 
@@ -41,12 +41,12 @@ function getWeather(city){
     let wind = document.querySelector(".today_wind");
     let countryName = document.querySelectorAll(".country_name");
 
-    fetch(`http://api.weatherapi.com/v1/current.json?key=846c554cf37147f48d0190504251605&q=${city}`)
+    fetch(`http://api.weatherapi.com/v1/current.json?key=954aba48f3e446a78f3114921251805&q=${city}`)
     .then(response =>{
         return response.json()
     })
     .then(data =>{
-        // console.log(data);
+        console.log(data);
         // console.log(data.location.country);
         currentTemperature.innerHTML = data.current.temp_c + "°C";
         humidity.innerHTML = data.current.humidity + "%";
@@ -60,6 +60,8 @@ function getWeather(city){
         
     });
 }
+// getWeather("Tbilisi");
+
 
 document.addEventListener("keypress", function(event){
   
