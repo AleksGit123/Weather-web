@@ -41,7 +41,7 @@ function getWeather(city){
     let wind = document.querySelector(".today_wind");
     let countryName = document.querySelectorAll(".country_name");
 
-    fetch(`http://api.weatherapi.com/v1/current.json?key=954aba48f3e446a78f3114921251805&q=${city}`)
+    fetch(`https://api.weatherapi.com/v1/current.json?key=954aba48f3e446a78f3114921251805&q=${city}`)
     .then(response =>{
         return response.json()
     })
