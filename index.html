@@ -33,10 +33,6 @@
             <source src="images/clouds.mp4" type="video/mp4">
         </video>
 
-        <!-- <a href="index.html">
-            <img src="images/weather-icon.svg" alt="cloud and sun behind" class="site_logo">
-        </a> -->
-
         <!-- header -->
         <header class="index_header">
 
@@ -51,82 +47,33 @@
             </section>
             <nav class="header_nav">
                 <ul class="page_ul">
-                    <li class="pages font">Today</li>
-                    <li class="pages font">Tommorow</li>
-                    <li class="pages font">Monthly Forecast</li>
+                    <li class="pages current font">Today</li>
+                    <li class="pages tmrr font">Tommorow</li>
                 </ul>
             </nav>
+
             <i class="fa-solid fa-bars-staggered burger_menu"></i>
+
             <section class="dropdown_list hide">
+
                 <ul class="dropdown_ul">
-                    <li class="dropdown_li font">Today</li>
-                    <li class="dropdown_li font">Tommorow</li>
-                    <li class="dropdown_li font">Monthly</li>
+                    <li class="dropdown_li current font">Today</li>
+                    <li class="dropdown_li tmrr font">Tommorow</li>
                 </ul>
             </section>
         </header>
 
 
-        <!-- switch celsius to fahrenheit or vice versa -->
-
         <!-- section for weather info -->
 
         <div class="search_container">
-            <input type="text" name="country" placeholder="Search for country or city..." id="country"
-                class="country_search font">
+            <input type="text" name="country" placeholder="Search  location" id="country" class="country_search font">
             <img src="images/search_icon.svg" alt="search icon" class="search_icon">
 
         </div>
 
 
         <section class="weather_section">
-
-            <!-- monthly forecast -->
-            <section class="weather_display_section monthly">
-                <div class="country_name_div">
-                    <h2 class="country_name font">Georgia</h2>
-                    <i class="fa-solid fa-location-dot loc_dot"></i>
-
-                </div>
-
-
-                <!-- main temperature display section -->
-                <div class="temperature_div">
-
-                    <h4 class="exact_day font">
-                        May 05, Sun
-                    </h4>
-                    <div class="main_temperature">
-                        <h3 class="temperature font">27°C</h3>
-                    </div>
-
-                </div>
-
-
-                <!-- weather details -->
-                <section class="details_section">
-                    <ul class="details_ul">
-                        <li class="details_li">
-                            <h2 class="list_h2 font">HUMIDITY</h2>
-                            <p class="list_p font">99%</p>
-                        </li>
-                        <li class="details_li">
-                            <h2 class="list_h2 font">VISIBILITY</h2>
-                            <p class="list_p font">8km</p>
-                        </li>
-                        <li class="details_li">
-                            <h2 class="list_h2 font"> AIR PRESSURE</h2>
-                            <p class="list_p font">1005hPa</p>
-                        </li>
-                        <li class="details_li">
-                            <h2 class="list_h2 font">WIND</h2>
-                            <p class="list_p font">2mph</p>
-                        </li>
-                    </ul>
-
-                </section>
-
-            </section>
 
             <!-- today forecast -->
             <section class="weather_display_section today">
@@ -144,7 +91,8 @@
                         May 05, Sun
                     </h4>
 
-                    <h3 class="temperature current_temp font">Temperature</h3>
+                    <h3 class="temperature current_temp font">0°C</h3>
+
 
                 </div>
 
@@ -175,9 +123,9 @@
             </section>
 
             <!-- tomorow forecast -->
-            <section class="weather_display_section tommorow">
+            <section class="weather_display_section tomorrow">
                 <div class="country_name_div">
-                    <h2 class="country_name font">Georgia</h2>
+                    <h2 class="country_name font">City,Country</h2>
                     <i class="fa-solid fa-location-dot loc_dot"></i>
 
                 </div>
@@ -186,12 +134,12 @@
                 <!-- main temperature display section -->
                 <div class="temperature_div">
 
-                    <h4 class="exact_day font">
+                    <h4 class="exact_day tomorrow_exact_day font">
                         May 06, Mon
                     </h4>
                     <div class="main_temperature">
-                        <img src="images/icon_temp.svg" alt="thermometer icon" class="temperature_icon">
-                        <h3 class="temperature font">27°C☁️</h3>
+                        <h3 class="temperature
+                        tomorrow_temp font">0°C</h3>
                     </div>
 
                 </div>
@@ -222,59 +170,207 @@
 
             </section>
 
+
         </section>
 
 
 
         <!-- footer -->
         <footer class="weather_according_time">
-            <!--  -->
+            <!-- div 1 -->
             <div class="time_weather_div">
-                <h2 class="time font">1:00pm</h2>
-                <p class="weather_icons">🌧️</p>
+                <h2 class="time font">12:00</h2>
+                <img src="images/image-solid.svg" alt="" class="weather_icon hidden_image">
                 <p class="degree font">29°</p>
             </div>
 
+            <!-- div 2 -->
             <div class="time_weather_div">
-                <h2 class="time font">21:00pm</h2>
-                <p class="weather_icons">☁️</p>
+                <h2 class="time font">13:00</h2>
+                <img src="images/image-solid.svg" alt="" class="weather_icon">
                 <p class="degree font">27°</p>
             </div>
 
+            <!-- div 3 -->
             <div class="time_weather_div">
-                <h2 class="time font">23:00pm</h2>
-                <p class="weather_icons">🌩️</p>
+                <h2 class="time font">14:00</h2>
+                <img src="images/image-solid.svg" alt="" class="weather_icon">
                 <p class="degree font">27°</p>
 
             </div>
 
+            <!-- div 4 -->
             <div class="time_weather_div">
-                <h2 class="time font">1:00am</h2>
-                <p class="weather_icons">🌩️</p>
+                <h2 class="time font">15:00</h2>
+                <img src="images/image-solid.svg" alt="" class="weather_icon">
                 <p class="degree font">26°</p>
 
             </div>
+
+            <!-- div 5 -->
             <div class="time_weather_div">
-                <h2 class="time font">3:00am</h2>
-                <p class="weather_icons">🌩️</p>
+                <h2 class="time font">16:00</h2>
+                <img src="images/image-solid.svg" alt="" class="weather_icon">
                 <p class="degree font">29°</p>
 
             </div>
+
+            <!-- div 6 -->
             <div class="time_weather_div">
-                <h2 class="time font">5:00am</h2>
-                <p class="weather_icons">⛅</p>
+                <h2 class="time font">17:00</h2>
+                <img src="images/image-solid.svg" alt="" class="weather_icon">
                 <p class="degree font">29°</p>
 
             </div>
-            <div class="time_weather_div">
-                <h2 class="time font">7:00am</h2>
-                <p class="weather_icons">🌨️</p>
-                <p class="degree font">29°</p>
 
+            <!-- div 7 -->
+            <div class="time_weather_div">
+                <h2 class="time font">18:00</h2>
+                <img src="images/image-solid.svg" alt="" class="weather_icon">
+                <p class="degree font">29°</p>
 
             </div>
 
-            <!-- <h3 class="read_more font">See more</h3> -->
+            <!-- div 8 -->
+            <div class="time_weather_div">
+                <h2 class="time font">19:00</h2>
+                <img src="images/image-solid.svg" alt="" class="weather_icon">
+                <p class="degree font">29°</p>
+
+            </div>
+
+            <!-- div 9 -->
+            <div class="time_weather_div">
+                <h2 class="time font">20:00</h2>
+                <img src="images/image-solid.svg" alt="" class="weather_icon">
+                <p class="degree font">29°</p>
+
+            </div>
+
+            <!-- div 10 -->
+            <div class="time_weather_div">
+                <h2 class="time font">21:00</h2>
+                <img src="images/image-solid.svg" alt="" class="weather_icon">
+                <p class="degree font">29°</p>
+
+            </div>
+
+            <!-- div 11 -->
+
+            <div class="time_weather_div">
+                <h2 class="time font">22:00</h2>
+                <img src="images/image-solid.svg" alt="" class="weather_icon">
+                <p class="degree font">29°</p>
+
+            </div>
+
+            <!-- div 12 -->
+            <div class="time_weather_div">
+                <h2 class="time font">23:00</h2>
+                <img src="images/image-solid.svg" alt="" class="weather_icon">
+                <p class="degree font">29°</p>
+
+            </div>
+
+            <!-- div 13 -->
+            <div class="time_weather_div">
+                <h2 class="time font">24:00</h2>
+                <img src="images/image-solid.svg" alt="" class="weather_icon">
+                <p class="degree font">29°</p>
+
+            </div>
+
+            <!-- div 14 -->
+            <div class="time_weather_div">
+                <h2 class="time font">1:00</h2>
+                <img src="images/image-solid.svg" alt="" class="weather_icon">
+                <p class="degree font">29°</p>
+
+            </div>
+
+            <!-- div 15 -->
+            <div class="time_weather_div">
+                <h2 class="time font">2:00</h2>
+                <img src="images/image-solid.svg" alt="" class="weather_icon">
+                <p class="degree font">29°</p>
+
+            </div>
+
+            <!-- div 16 -->
+            <div class="time_weather_div">
+                <h2 class="time font">3:00</h2>
+                <img src="images/image-solid.svg" alt="" class="weather_icon">
+                <p class="degree font">29°</p>
+
+            </div>
+
+            <!-- div 17 -->
+            <div class="time_weather_div">
+                <h2 class="time font">4:00</h2>
+                <img src="images/image-solid.svg" alt="" class="weather_icon">
+                <p class="degree font">29°</p>
+
+            </div>
+
+            <!-- div 18 -->
+            <div class="time_weather_div">
+                <h2 class="time font">5:00</h2>
+                <img src="images/image-solid.svg" alt="" class="weather_icon">
+                <p class="degree font">29°</p>
+
+            </div>
+
+
+            <!-- div 19 -->
+            <div class="time_weather_div">
+                <h2 class="time font">6:00</h2>
+                <img src="images/image-solid.svg" alt="" class="weather_icon">
+                <p class="degree font">29°</p>
+
+            </div>
+
+            <!-- div 20 -->
+            <div class="time_weather_div">
+                <h2 class="time font">7:00</h2>
+                <img src="images/image-solid.svg" alt="" class="weather_icon">
+                <p class="degree font">29°</p>
+
+            </div>
+
+            <!-- div 21 -->
+            <div class="time_weather_div">
+                <h2 class="time font">8:00</h2>
+                <img src="images/image-solid.svg" alt="" class="weather_icon">
+                <p class="degree font">29°</p>
+
+            </div>
+
+            <!-- div 22 -->
+            <div class="time_weather_div">
+                <h2 class="time font">9:00</h2>
+                <img src="images/image-solid.svg" alt="" class="weather_icon">
+                <p class="degree font">29°</p>
+
+            </div>
+
+            <!-- div 23 -->
+            <div class="time_weather_div">
+                <h2 class="time font">10:00</h2>
+                <img src="images/image-solid.svg" alt="" class="weather_icon">
+                <p class="degree font">29°</p>
+
+            </div>
+
+            <!-- div 24 -->
+            <div class="time_weather_div">
+                <h2 class="time font">11:00</h2>
+                <img src="images/image-solid.svg" alt="" class="weather_icon">
+                <p class="degree font">29°</p>
+
+            </div>
+
+
+
         </footer>
     </main>
 

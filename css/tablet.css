@@ -6,12 +6,15 @@
 
     /*header  */
     .index_header {
+        padding-block: 20px 30px;
+        padding-inline: 30px 35px;
         column-gap: 40px;
+
     }
 
     .weather_me {
         font-size: 40px;
-        margin-left: 40px;
+        /* margin-left: 40px; */
     }
 
     r .current_time {

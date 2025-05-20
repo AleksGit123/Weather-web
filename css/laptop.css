@@ -13,7 +13,7 @@
 
     .weather_me {
         font-size: 55px;
-        margin-left: 55px;
+        /* margin-left: 55px; */
     }
 
     .current_time {
@@ -101,7 +101,6 @@
     /* details section */
     .details_section {
         padding-inline: 10px;
-
     }
 
     .details_ul {
