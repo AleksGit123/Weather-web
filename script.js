@@ -137,7 +137,7 @@ let tempAccordingTime = async name =>{
     
    
  
-    fetch(`http://api.weatherapi.com/v1/forecast.json?key=eb5d012136bc4544a56214539251905&q=${name}`).then(request =>{
+    fetch(`https://api.weatherapi.com/v1/forecast.json?key=eb5d012136bc4544a56214539251905&q=${name}`).then(request =>{
         return request.json()
     }).then(data => {
         // console.log(data)
