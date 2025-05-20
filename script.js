@@ -53,7 +53,7 @@ let getTomorrowWeather = name =>{
     .then(response => response.json())
     .then(data => {
       let tomorrow = data.forecast.forecastday[1]; // index 1 = tomorrow
-      console.log(data.forecast)
+      console.log(data)
   
       // display temperature and day 
       tomorrowTemp.innerHTML = tomorrow.day.avgtemp_c + "°C";
@@ -150,7 +150,7 @@ let tempAccordingTime = async name =>{
     
        weatherIcons.forEach((element,index) => {
             // console.log(index);
-            element.src = hoursAndTemp[index].condition.icon;
+            element.src = "https:" + hoursAndTemp[index].condition.icon;
        });
 
        temp.forEach((element,index) => {
