@@ -49,7 +49,7 @@ tomorrowDate.setDate(date.getDate() + 1);
 
 let getTomorrowWeather = name =>{
 
-    fetch(`https://api.weatherapi.com/v1/forecast.json?key=eb5d012136bc4544a56214539251905&q=${name}&days=2`)
+    fetch(`https://api.weatherapi.com/v1/forecast.json?key=c0439871dbe740f3bb891721252005&q=${name}&days=2`)
     .then(response => response.json())
     .then(data => {
       let tomorrow = data.forecast.forecastday[1]; // index 1 = tomorrow
@@ -110,7 +110,7 @@ function getWeather(city){
     let wind = document.querySelector(".today_wind");
     let countryName = document.querySelectorAll(".country_name");
 
-    fetch(`https://api.weatherapi.com/v1/current.json?key=eb5d012136bc4544a56214539251905&q=${city}`)
+    fetch(`https://api.weatherapi.com/v1/current.json?key=c0439871dbe740f3bb891721252005&q=${city}`)
     .then(response =>{
         return response.json()
     })
@@ -137,7 +137,7 @@ let tempAccordingTime = async name =>{
     
    
  
-    fetch(`https://api.weatherapi.com/v1/forecast.json?key=eb5d012136bc4544a56214539251905&q=${name}`).then(request =>{
+    fetch(`https://api.weatherapi.com/v1/forecast.json?key=c0439871dbe740f3bb891721252005&q=${name}`).then(request =>{
         return request.json()
     }).then(data => {
         // console.log(data)
